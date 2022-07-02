@@ -2,10 +2,10 @@
 
 ## Overview 
 
-iViz is a super handy interactive tool visualize any kind of 2D image sequences with image, 
+iViz is a super handy interactive tool to visualize any kind of 2D sequences with image, 
 optical flow and general floating point data. The
 tool allows to arrange views in a grid and scroll through the sequence of data. 
-Inspection is possible with cursor working simultaneously in multiple views. Visualization ranges can be adapted 
+Inspection is possible with cursor working simultaneously in multiple views. Visualization ranges can be adapted and
 can be adjusted interactively for optical flow and floating point data. 
 
 ___Tutorials and YouTube videos will be made available in the second
@@ -49,6 +49,5 @@ Please note that with all the packages installed you should have the following l
 The code is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 Any kind of redistribution or commercial use is prohibited. 
 
-If you are interested contributing and partnering up please contact [Eddy Ilg](mailto:me@eddy-ilg.net)
-for questions.
+If you are interested contributing and partnering up please contact [Eddy Ilg](mailto:me@eddy-ilg.net).
 Contributions are welcome. 
