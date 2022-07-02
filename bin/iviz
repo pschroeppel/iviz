@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import os 
+import sys
+
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+from PyQt5.QtWidgets import QApplication
+app = QApplication(sys.argv)
+
+from itypes import set_trace_level
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("path", type=str, nargs='*', help="Path to a directory or a sequence file")
+
+parser.add_argument("--debug", action="store_true", help="Show debugging output")
+parser.add_argument("--trace", action="store_true", help="Show trace output")
+parser.add_argument("--cols", type=int, default=5, help="Number of columns to use when show directory content")
+
+new_args = []
+ds_args = []
+for arg in sys.argv[1:]:
+    if arg in [","] or not arg.startswith("-"):
+        ds_args.append(arg)
+    else:
+        new_args.append(arg)
+
+sys.argv[1:] = new_args
+ds_args = ds_args[0] if len(ds_args) == 1 else ds_args
+
+args = parser.parse_args()
+if args.debug: set_trace_level("DEBUG")
+if args.trace: set_trace_level("TRACE")
+
+from iviz.viewers import DatasetViewer
+
+file = None
+path = args.path
+
+viewer = DatasetViewer(ds_args, cols=args.cols)
+viewer.show()
+
+if viewer.minimumSizeHint().height() < 450:
+    viewer.setMinimumHeight(450)
+
+app.exit(app.exec_())
