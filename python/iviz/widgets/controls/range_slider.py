@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+### --------------------------------------------- ###
+### Part of iViz                                  ###
+### (C) 2022 Eddy ilg (me@eddy-ilg.net)           ###
+### Creative Commons                              ###
+### Attribution-NonCommercial-NoDerivatives       ###
+### 4.0 International License.                    ###
+### Commercial use an redistribution prohibited.  ###
+### See https://github.com/eddy-ilg/iviz          ###
+### --------------------------------------------- ###
+
 from ...utils import clamp
 from PyQt5.QtWidgets import QSizePolicy, QStyleOptionSlider, QStyle, QWidget, QApplication, QSlider
 from PyQt5.QtCore import QRect, QSize, Qt, pyqtSignal

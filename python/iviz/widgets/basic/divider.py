@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+### --------------------------------------------- ###
+### Part of iViz                                  ###
+### (C) 2022 Eddy ilg (me@eddy-ilg.net)           ###
+### Creative Commons                              ###
+### Attribution-NonCommercial-NoDerivatives       ###
+### 4.0 International License.                    ###
+### Commercial use an redistribution prohibited.  ###
+### See https://github.com/eddy-ilg/iviz          ###
+### --------------------------------------------- ###
+
 from PyQt5.QtGui import QCursor, QPainter, QColor, QPixmap, QKeyEvent, QPalette
 from PyQt5.QtWidgets import QGridLayout, QWidget, QApplication
 from PyQt5.QtWidgets import QMenuBar, QAction, QMenu, QSizePolicy

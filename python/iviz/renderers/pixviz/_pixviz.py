@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+### --------------------------------------------- ###
+### Part of iViz                                  ###
+### (C) 2022 Eddy ilg (me@eddy-ilg.net)           ###
+### Creative Commons                              ###
+### Attribution-NonCommercial-NoDerivatives       ###
+### 4.0 International License.                    ###
+### Commercial use an redistribution prohibited.  ###
+### See https://github.com/eddy-ilg/iviz          ###
+### --------------------------------------------- ###
+
 import itypes
 from ..._baseviz import _BaseVisualization
 from itypes import File, is_torch, is_numpy, is_str, TraceLogger

@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+
+### --------------------------------------------- ###
+### Part of iViz                                  ###
+### (C) 2022 Eddy ilg (me@eddy-ilg.net)           ###
+### Creative Commons                              ###
+### Attribution-NonCommercial-NoDerivatives       ###
+### 4.0 International License.                    ###
+### Commercial use an redistribution prohibited.  ###
+### See https://github.com/eddy-ilg/iviz          ###
+### --------------------------------------------- ###
+
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QSizePolicy, QGridLayout
 from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtCore import pyqtSignal, Qt, QSize
