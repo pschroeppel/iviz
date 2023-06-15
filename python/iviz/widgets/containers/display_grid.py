@@ -61,9 +61,10 @@ class DisplayGrid(QWidget):
     def is_occupied(self, col, row, colspan=1, rowspan=1):
         return self._lay.is_occupied(col, row, colspan, rowspan)
 
+    # TODO(phil): I have the impression that the naming scheme of display vs widget is inconsistent
     def set_widget(self, widget, col, row, colspan=1, rowspan=1):
         widget.set_index((col, row))
-        self._displays.append(widget)
+        self._displays.append(widget)  # TODO(phil): for me it would be easier if displays is a dict that maps from (col, row) to widget
         self._lay.add_widget(widget, col, row, colspan, rowspan)
 
     def new_row(self):

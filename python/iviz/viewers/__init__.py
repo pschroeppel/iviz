@@ -11,3 +11,4 @@
 ### --------------------------------------------- ###
 
 from .dataset import DatasetViewer
+from .custom_data import CustomDataViewer

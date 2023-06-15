@@ -102,10 +102,12 @@ class SaveViewsDialog(QDialog):
         self._top_layout.addWidget(self._button_box)
 
         self._entry_widgets = []
+        i = 0
         for (col, row), (id, data) in entries.items():
-            widget = EntrySaveDisplay(id, data)
+            widget = EntrySaveDisplay(str(i), data)
             self._grid_layout.addWidget(widget, row, col)
             self._entry_widgets.append(widget)
+            i += 1
 
     def accept(self):
         self.__log.debug("accepted")

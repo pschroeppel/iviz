@@ -164,9 +164,9 @@ class DatasetViewer(QWidget):
         self._area.set_main_widget(self._grid_scroll)
         self._area.set_controls(self._controls)
 
-        if len(self._ds.viz.ids()) == 1:
-            self._area.set_show_drag_and_drop_areas(False)
-            self._area.set_show_viz_controls(False)
+        if False:#len(self._ds.viz.ids()) == 1:
+            self._grid.set_show_drag_and_drop_areas(False)
+            self._grid.set_show_viz_controls(False)
 
         self._layout = QGridLayout()
         self._layout.setContentsMargins(0, 0, 0, 0)
