@@ -1,5 +1,9 @@
 # iViz
 
+This is a fork of the [iViz](https://github.com/eddy-ilg/iviz) project by [Eddy Ilg](https://github.com/eddy-ilg). The fork:
+- makes the package pip-installable via `pyproject.toml` and a `src/` layout
+- contains minor changes in the display grid and the save-views dialog
+
 ## Overview 
 
 iViz is a super handy interactive tool to visualize any kind of 2D sequences with image, 
